@@ -1,0 +1,58 @@
+.logo{
+    background-image: url("new.png");
+    height: 100px;
+    margin-top: 100p;
+    float: left;
+    margin-left: 5px
+}
+
+header{
+    background-image: url("bikers.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+ul{
+list-style:none;
+float: right;
+margin: 65px;
+
+}
+
+li{
+
+    display: inline;
+    margin: 10px;
+    border: 2px solid darkblue;
+border-radius: 5px;
+padding: 5px
+}
+
+li:hover{
+    cursor: pointer;
+    border:2px solid gold;
+    background-color: 
+}
+
+#mainmessage{
+
+    position: absolute;
+    top: 50%;
+    margin-left: 25px;
+    font-size: 250%;
+}
+
+.button{
+    text-decoration: none;
+    border: 2px solid darkslategrey;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+
+}
+
+#action{
+    margin-top: 25px;
+}
+
+

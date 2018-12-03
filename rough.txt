@@ -1,0 +1,26 @@
+
+https://github.com/prafful/landingpage
+https://github.com/krismech/krissession
+
+https://angular.io/
+cli.angular.io
+
+git add
+git commit -m "message"
+git status
+git push -u origin master
+
+
+
+npm i -g @angular/cli
+ng --version
+ng new angular1
+y
+CSS
+Go inside angular1 folder
+npm install
+ng serve
+
+
+
+
