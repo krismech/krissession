@@ -11,15 +11,10 @@ Pending :
 &nbsp;
 <button (click)="taskDone(ct)"> Done </button>
  </li>
-</ol>
-
-Completed:
-
-<ol>
- <li *ngFor="let task of myCompletedTasks; let tt =index">
-   {{task}} at {{tt}} position!
-
-&nbsp;
-<button (click)="taskDone(tt)"> Completed </button>
- </li>
+  Completed tasks:
+  <ol>
+    <li *ngFor="let loc of myCompletedTasks">
+      {{loc}}
+    </li>
+  </ol>
 </ol>

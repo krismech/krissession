@@ -11,16 +11,14 @@ counter =0
 
 oneTask=""
 
-myTasks=[
+myTasks:any=[
 'Go and get some lassi',
 'Plan for a weekend',
 'Identify some examples',
 'Some more task...',
 'Check calendar for meeting',
 ]
-myCompletedTask=[
-  
-]
+myCompletedTasks:any=[]
   constructor() { }
 
   ngOnInit() {
@@ -33,7 +31,9 @@ sayHello=function(){
 }
 taskDone(ct){
   console.log("Index value: " +ct);
-  this.myTasks.splice(ct,1)
+  //loc=currentTask
+  this.myCompletedTasks.push(this.myTasks[ct])
+     this.myTasks.splice(ct, 1)
 }
 
 }
