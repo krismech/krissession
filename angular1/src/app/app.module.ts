@@ -17,6 +17,7 @@ import { ConsumeLocalService1Component } from './consumeService/consume-local-se
 import { ConsumeLocalService2Component } from './consumeService/consume-local-service2/consume-local-service2.component';
 import { ConsumeRemoteDataComponent } from './remote/consume-remote-data/consume-remote-data.component';
 import { UsersAPIComponentComponent } from './remote/users-apicomponent/users-apicomponent.component';
+import { AutoSearchPipePipe } from './myPipes/auto-search-pipe.pipe';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { UsersAPIComponentComponent } from './remote/users-apicomponent/users-ap
     ConsumeLocalService1Component,
     ConsumeLocalService2Component,
     ConsumeRemoteDataComponent,
-    UsersAPIComponentComponent
+    UsersAPIComponentComponent,
+    AutoSearchPipePipe
    
   ],
   imports: [

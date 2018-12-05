@@ -1,3 +1,4 @@
+import { AutoSearchPipePipe } from './../../myPipes/auto-search-pipe.pipe';
 import { RestApiUsersServiceService } from './../../services/rest-api-users-service.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -23,6 +24,36 @@ getAPIData(){
   this.allUsers=data
   console.log(this.allUsers)
 
+})
+}
+user={
+"name": "Kris",
+"email": "kris.mecha2007@gmail.com",
+"address": {
+  "geo":{
+    "lat":"88.88",
+    "lng" : "88.88"
+    }
+  }
+}
+
+postUser(){
+this.userService.createUser(this.user).subscribe((response) =>{
+  console.log(response)
+   this.userService.getRemoteUsers().subscribe((response)=>{
+    console.log(response)
+  this.allUsers=response
+  console.log(this.allUsers)
+   })
+})
+
+}
+  deleteUser(a){
+this.userService.deleteUser(a).subscribe((response1) =>{
+  console.log(response1)
+   this.userService.getRemoteUsers().subscribe((response1)=>{
+  this.allUsers=response1
+   })
 })
 }
 }
