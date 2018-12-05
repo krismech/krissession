@@ -1,20 +1,37 @@
 <br>
-Task:
-<input type="text" [(ngModel)]='oneTask' placeholder="Add your task...">
-<button (click)= "sayHello()"> Add Task </button>{{oneTask}}
+Task: 
+<input type="text" [(ngModel)]='oneTask' placeholder="Add your task....">
+<button (click)="sayHello()">Add Task</button>{{oneTask}}
 <br>
-Pending :
+Pending Tasks: 
 <ol>
- <li *ngFor="let task of myTasks; let ct =index">
-   {{task}} at {{ct}} position!
+  <li *ngFor="let task of myTasks; let ct = index">
+    {{task | lowercase  }} at {{ct}} position!
+    &nbsp;
+    <button (click)="taskDone(ct)">Done</button> 
 
-&nbsp;
-<button (click)="taskDone(ct)"> Done </button>
- </li>
-  Completed tasks:
+  </li>
+   Completed Tasks:
   <ol>
     <li *ngFor="let loc of myCompletedTasks">
       {{loc}}
     </li>
-  </ol>
+
 </ol>
+
+<hr>
+Currency Pipe: {{ salary | currency:'INR'  }}
+<br>
+Date Pipe Default: {{  myDate  }}
+<br>
+Date Pipe: {{  myDate | date:'h:mm' }}
+<br>
+UnSorted Friends: {{  friends  }}
+<br>
+Sorted Friends: {{ friends | stringSortPipe:'dsc' }}
+<br>
+UnSorted Score: {{score}}
+<br>
+Sorted Score: {{ score | numberSortPipe:'dsc' }}
+
+
