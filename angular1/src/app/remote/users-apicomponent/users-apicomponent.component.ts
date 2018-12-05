@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { AutoSearchPipePipe } from './../../myPipes/auto-search-pipe.pipe';
 import { RestApiUsersServiceService } from './../../services/rest-api-users-service.service';
 import { Component, OnInit } from '@angular/core';
@@ -11,8 +12,12 @@ export class UsersAPIComponentComponent implements OnInit {
 
 
 allUsers:any
+searchStrign:any 
 
-  constructor(private userService:RestApiUsersServiceService) { }
+  constructor(private userService:RestApiUsersServiceService ,private router:Router ) {
+
+    
+   }
 
   ngOnInit() {
     this.getAPIData()
@@ -55,5 +60,10 @@ this.userService.deleteUser(a).subscribe((response1) =>{
   this.allUsers=response1
    })
 })
+}
+viewDetail(id){
+console.log(id)
+this.router.navigate(["/remoteDate", id])
+
 }
 }

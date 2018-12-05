@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from "@angular/forms";
 import { RouterModule } from "@angular/router";
 import { HttpClientModule } from "@angular/common/http";
+import { ReactiveFormsModule } from "@angular/forms";
 
 
 import { AppComponent } from './app.component';
@@ -18,6 +19,9 @@ import { ConsumeLocalService2Component } from './consumeService/consume-local-se
 import { ConsumeRemoteDataComponent } from './remote/consume-remote-data/consume-remote-data.component';
 import { UsersAPIComponentComponent } from './remote/users-apicomponent/users-apicomponent.component';
 import { AutoSearchPipePipe } from './myPipes/auto-search-pipe.pipe';
+import { UserDetailComponentComponent } from './remote/user-detail-component/user-detail-component.component';
+import { TemplateFormComponent } from './form/template-form/template-form.component';
+import { ModelFormComponent } from './form/model-form/model-form.component';
 
 
 @NgModule({
@@ -34,13 +38,17 @@ import { AutoSearchPipePipe } from './myPipes/auto-search-pipe.pipe';
     ConsumeLocalService2Component,
     ConsumeRemoteDataComponent,
     UsersAPIComponentComponent,
-    AutoSearchPipePipe
+    AutoSearchPipePipe,
+    UserDetailComponentComponent,
+    TemplateFormComponent,
+    ModelFormComponent
    
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    ReactiveFormsModule,
     RouterModule.forRoot([
                       {
                         path:'',
@@ -86,7 +94,19 @@ import { AutoSearchPipePipe } from './myPipes/auto-search-pipe.pipe';
                       path:'remoteData1',
                       component: UsersAPIComponentComponent
                         },
-                      
+                      {
+                      path:'remoteData/:myid',
+                      component: UserDetailComponentComponent
+                        },
+                        {
+                          path:'templateform',
+                         component: TemplateFormComponent
+                        },
+                        {
+                  path:'modelForm',
+                  component: ModelFormComponent
+                        },
+
                       {
                         path:'**',
                         component:NotFoundComponent

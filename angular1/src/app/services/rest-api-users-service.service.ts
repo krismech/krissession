@@ -20,4 +20,8 @@ return this.http.get("http://localhost:3000/users")
   deleteUser(user){
   return this.http.delete("http://localhost:3000/users/" + user)
   }
+  getOneUser(user){
+  return this.http.get("http://localhost:3000/")
+  
+}
 }
