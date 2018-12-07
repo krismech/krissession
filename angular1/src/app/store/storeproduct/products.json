@@ -1,0 +1,27 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Galaxy S5",
+      "description": "16GB",
+      "price": "$646.99",
+      "image": "samsung.jpg"
+    
+      },
+       {
+         "id": 1,
+      "name": "Iphone",
+      "description": "32GB",
+      "price": "$646.99",
+      "image": "715OfKdj9UL._SY550_.jpg"
+    },
+    {
+       "id": 1,
+      "name": "Lumia",
+      "description": "64GB",
+      "price": "$646.99",
+      "image": "microsoft-lumia-53.jpg"
+        }
+		]
+		}
+      

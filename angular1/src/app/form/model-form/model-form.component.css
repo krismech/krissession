@@ -1,0 +1,8 @@
+button[type="submit"]:disabled{
+color:grey
+background-color beige
+}
+button[type="submit"]:disabled{
+    color:red
+background-color blue
+}

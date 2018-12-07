@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormGroup, FormControl} from "@angular/forms";
+import {FormGroup, FormControl,Validators} from "@angular/forms";
 
 
 @Component({
@@ -16,11 +16,16 @@ modelForm:any
   ngOnInit() {
 
     this.modelForm = new FormGroup({
-      name: new FormControl(),
-      email: new FormControl(),
-      hobby: new FormControl(),
+      name: new FormControl("", Validators.compose([Validators.minLength(3), Validators.pattern('^[a-zA-Z]+$')])),
+      email: new FormControl("", this.checkEmailLength),
+      hobby: new FormControl(""),
 
     })
+  }
+  checkEmailLength(control){
+    if(control.value.lengh <4){
+      return{'email':true}
+    }
   }
 modelFormUser(user){
   console.log(user)

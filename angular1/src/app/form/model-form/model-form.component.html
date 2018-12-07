@@ -12,5 +12,6 @@ Hobby:<select formControlName="hobby">
 </select>
 <br>
 <br>
-<button type="submit">Add</button>
+<button type="submit" [disabled]="!modelForm.valid">Add</button>
+{{modelForm.valid}}
 </form>
