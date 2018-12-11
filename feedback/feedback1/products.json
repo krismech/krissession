@@ -1,0 +1,22 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "title": "Facebook",
+        "upvote":"21",
+        "downVote": "17",
+        "description": "Like , share or Comment",
+        "image": "/public/facebook.jpg/"
+        },
+        
+        {
+        "id": 2,
+        "title": "Twitter",
+        "upvote":"21",
+        "downVote": "17",
+        "description": "You can Tweet",
+        "image": "/public/twitter.png/"
+        }
+  
+        ]
+        }

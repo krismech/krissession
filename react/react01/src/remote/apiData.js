@@ -29,16 +29,16 @@ console.log(this.state.users)
         this.getRemoteData()
     }
     renderUserDetail(){
-return this.state.users.map((user)=>{
+    return this.state.users.map((user)=>{
 
-            return (<UserDetails
-                key={user.id}
-                myname={user.name}
-                myemail={user.email}
-            ></UserDetails>
-            )
-        })
-    }
+                return (<UserDetails
+                    key={user.id}
+                    myname={user.name}
+                    myemail={user.email}
+                ></UserDetails>
+                )
+            })
+        }
 
     render() { 
         return ( 

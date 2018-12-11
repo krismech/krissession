@@ -1,0 +1,45 @@
+body{
+
+    margin: 0;
+    padding: 20px;
+    background-color: lightblue;
+
+}
+
+.header li{
+
+    background-color: lightgray;
+    list-style: none;
+    display: inline;
+}
+
+
+.header li a{
+
+    color: whitesmoke;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    display :inline-block;
+}
+
+.content{
+background-color: aquamarine;
+padding: 20px
+}
+
+.fade-appear{
+
+    opacity:0;
+}
+
+.fade-appear.fade-appear-active{
+
+    opacity: 1;
+    transition:all 200ms ease-in-out;
+}
+
+.transition-appear{
+
+
+}
