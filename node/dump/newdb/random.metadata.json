@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":2,"key":{"_id":1},"name":"_id_","ns":"newdb.random"},{"v":2,"key":{"lottery":1.0},"name":"lottery_1","ns":"newdb.random"}],"uuid":"72ecaa4fc4cf4b7289019aa5b526a1f9"}
